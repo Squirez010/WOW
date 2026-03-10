@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Warriors of Warmth</title>
+  <meta name="description" content="Contact Warriors of Warmth. Submit an enquiry or nominate a community space in need of heating support.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    Supporting communities in need with volunteer-led heating projects across England. <a href="need-help.html">Need help?</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.png" alt="Warriors of Warmth">
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="need-help.html">Need Help</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="contact.html" class="btn btn-primary" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Contact us</h1>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-intro">Choose how you'd like to get in touch. Send a general enquiry or nominate a community space that could use our help. We'll respond as soon as we can.</p>
+
+        <div class="contact-tabs" role="tablist" aria-label="Contact form type">
+          <button type="button" class="contact-tab contact-tab-active" role="tab" aria-selected="true" aria-controls="general-form-block" id="tab-general">General enquiry</button>
+          <button type="button" class="contact-tab" role="tab" aria-selected="false" aria-controls="nomination-form-block" id="tab-nomination">Nominate a project</button>
+        </div>
+
+        <div class="contact-form-block contact-form-block-active" id="general-form-block" role="tabpanel" aria-labelledby="tab-general">
+          <h2 class="contact-form-title">General enquiry</h2>
+          <p class="contact-form-desc">Partnership, volunteering, or something else? Use this form to get in touch.</p>
+          <form class="contact-form" action="#" method="post" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General enquiry</option>
+                <option value="partnership">Partnership or sponsorship</option>
+                <option value="volunteer">Volunteer / installer enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-form-block contact-form-block-hidden" id="nomination-form-block" role="tabpanel" aria-labelledby="tab-nomination">
+          <h2 class="contact-form-title">Nominate a project</h2>
+          <p class="contact-form-desc">Know a community space that needs heating help? Tell us about it so we can consider it for a future project.</p>
+          <form class="contact-form" action="#" method="post" id="nomination-form">
+            <div class="form-group">
+              <label for="nom-name">Your name <span class="required">*</span></label>
+              <input type="text" id="nom-name" name="name" required placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label for="nom-email">Email <span class="required">*</span></label>
+              <input type="email" id="nom-email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="nom-place">Name of the place or organisation <span class="required">*</span></label>
+              <input type="text" id="nom-place" name="place" required placeholder="e.g. Village Hall, Riverside Community Centre">
+            </div>
+            <div class="form-group">
+              <label for="nom-type">Type of space</label>
+              <select id="nom-type" name="type">
+                <option value="">Select one</option>
+                <option value="community-hall">Community hall</option>
+                <option value="church-hall">Church or faith hall</option>
+                <option value="youth-club">Youth club or centre</option>
+                <option value="scout-guides">Scout / Guide hall</option>
+                <option value="food-bank">Food bank or community kitchen</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nom-location">Town or area <span class="required">*</span></label>
+              <input type="text" id="nom-location" name="location" required placeholder="e.g. Nottingham, North Nottinghamshire">
+            </div>
+            <div class="form-group">
+              <label for="nom-heating">Current heating situation</label>
+              <textarea id="nom-heating" name="heating" rows="3" placeholder="e.g. no working heating, boiler failed, inefficient system…"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="nom-message">Any other details</label>
+              <textarea id="nom-message" name="message" rows="3" placeholder="Anything else we should know?"></textarea>
+            </div>
+            <p class="form-note">After reviewing, we will contact you on the provided contact details to discuss the needs further.</p>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Submit nomination</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Warriors of <span>Warmth</span></span>
+          <p>Supporting community spaces across England with volunteer-led heating projects. We supply materials and volunteers to install heating for local spaces that bring the community together.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Get involved</h4>
+          <ul>
+            <li><a href="need-help.html">Need help</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="contact.html">Nominate a cause</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="sponsors.html">Our sponsors</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0;">&copy; Warriors of Warmth. All rights reserved.</p>
+        <p style="margin:0;">Fighting Fuel Poverty.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var tabNom = document.getElementById('tab-nomination');
+      var tabGen = document.getElementById('tab-general');
+      var blockNom = document.getElementById('nomination-form-block');
+      var blockGen = document.getElementById('general-form-block');
+
+      function showNomination() {
+        tabNom.classList.add('contact-tab-active');
+        tabNom.setAttribute('aria-selected', 'true');
+        tabGen.classList.remove('contact-tab-active');
+        tabGen.setAttribute('aria-selected', 'false');
+        blockNom.classList.remove('contact-form-block-hidden');
+        blockNom.classList.add('contact-form-block-active');
+        blockGen.classList.add('contact-form-block-hidden');
+        blockGen.classList.remove('contact-form-block-active');
+      }
+
+      function showGeneral() {
+        tabGen.classList.add('contact-tab-active');
+        tabGen.setAttribute('aria-selected', 'true');
+        tabNom.classList.remove('contact-tab-active');
+        tabNom.setAttribute('aria-selected', 'false');
+        blockGen.classList.remove('contact-form-block-hidden');
+        blockGen.classList.add('contact-form-block-active');
+        blockNom.classList.add('contact-form-block-hidden');
+        blockNom.classList.remove('contact-form-block-active');
+      }
+
+      tabNom.addEventListener('click', showNomination);
+      tabGen.addEventListener('click', showGeneral);
+    })();
+
+    document.getElementById('nomination-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your nomination. We will be in touch soon.');
+    });
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message. We will be in touch soon.');
+    });
+  </script>
+</body>
+</html>
