@@ -242,6 +242,9 @@ main {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.15;
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.95),
+    0 0 20px rgba(255,255,255,0.9);
 }
 
 .hero .tagline {
@@ -251,6 +254,9 @@ main {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   opacity: 0.95;
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.95),
+    0 0 20px rgba(255,255,255,0.9);
 }
 
 .hero .sub {
@@ -262,6 +268,9 @@ main {
   margin-right: auto;
   line-height: 1.6;
   opacity: 0.95;
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.95),
+    0 0 20px rgba(255,255,255,0.9);
 }
 
 /* Section titles — STC-style uppercase bold */
